@@ -53,10 +53,10 @@
             // 
             // RegjistrohuR
             // 
-            RegjistrohuR.BackColor = Color.FromArgb(180, 190, 201);
+            RegjistrohuR.BackColor = Color.FromArgb(222, 8, 20);
             RegjistrohuR.FlatAppearance.BorderSize = 0;
-            RegjistrohuR.FlatAppearance.MouseDownBackColor = Color.FromArgb(180, 190, 201);
-            RegjistrohuR.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            RegjistrohuR.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            RegjistrohuR.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             RegjistrohuR.FlatStyle = FlatStyle.Flat;
             RegjistrohuR.Font = new Font("SF Pro Display", 13.8F);
             RegjistrohuR.Location = new Point(634, 376);
