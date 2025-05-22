@@ -34,21 +34,16 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            qkyqu = new Button();
             terheqja = new Button();
             bilanci = new Button();
-            transfer = new Button();
             deponim = new Button();
-            kerko = new Button();
-            historiku = new Button();
-            mesazhet = new Button();
             panel1 = new Panel();
             pictureBox2 = new PictureBox();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            kerko = new Button();
+            mesazhet = new Button();
+            historiku = new Button();
+            qkyqu = new Button();
+            dergo = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -105,30 +100,12 @@
             label4.Size = new Size(0, 29);
             label4.TabIndex = 8;
             // 
-            // qkyqu
-            // 
-            qkyqu.BackColor = Color.FromArgb(245, 112, 103);
-            qkyqu.FlatAppearance.BorderColor = Color.Black;
-            qkyqu.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 112, 103);
-            qkyqu.FlatAppearance.MouseOverBackColor = Color.FromArgb(222, 22, 22);
-            qkyqu.FlatStyle = FlatStyle.Flat;
-            qkyqu.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            qkyqu.ForeColor = SystemColors.ButtonFace;
-            qkyqu.Location = new Point(794, 423);
-            qkyqu.Margin = new Padding(4, 3, 4, 3);
-            qkyqu.Name = "qkyqu";
-            qkyqu.Size = new Size(290, 56);
-            qkyqu.TabIndex = 9;
-            qkyqu.Text = "Çkyçu";
-            qkyqu.UseVisualStyleBackColor = false;
-            qkyqu.Click += qkyqu_Click;
-            // 
             // terheqja
             // 
             terheqja.BackColor = Color.FromArgb(222, 8, 20);
             terheqja.FlatAppearance.BorderColor = Color.Black;
             terheqja.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            terheqja.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            terheqja.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             terheqja.FlatStyle = FlatStyle.Flat;
             terheqja.Font = new Font("SF Pro Display", 12F);
             terheqja.ForeColor = SystemColors.Window;
@@ -146,7 +123,7 @@
             bilanci.BackColor = Color.FromArgb(222, 8, 20);
             bilanci.FlatAppearance.BorderColor = Color.Black;
             bilanci.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            bilanci.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            bilanci.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             bilanci.FlatStyle = FlatStyle.Flat;
             bilanci.Font = new Font("SF Pro Display", 12F);
             bilanci.ForeColor = SystemColors.Window;
@@ -159,29 +136,12 @@
             bilanci.UseVisualStyleBackColor = false;
             bilanci.Click += bilanci_Click;
             // 
-            // transfer
-            // 
-            transfer.BackColor = Color.FromArgb(222, 8, 20);
-            transfer.FlatAppearance.BorderColor = Color.Black;
-            transfer.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            transfer.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
-            transfer.FlatStyle = FlatStyle.Flat;
-            transfer.Font = new Font("Microsoft Sans Serif", 14F);
-            transfer.Location = new Point(423, 285);
-            transfer.Margin = new Padding(4, 3, 4, 3);
-            transfer.Name = "transfer";
-            transfer.Size = new Size(290, 56);
-            transfer.TabIndex = 12;
-            transfer.Text = "Dërgo Para";
-            transfer.UseVisualStyleBackColor = false;
-            transfer.Click += transfer_Click;
-            // 
             // deponim
             // 
             deponim.BackColor = Color.FromArgb(222, 8, 20);
             deponim.FlatAppearance.BorderColor = Color.Black;
             deponim.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            deponim.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            deponim.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             deponim.FlatStyle = FlatStyle.Flat;
             deponim.Font = new Font("SF Pro Display", 12F);
             deponim.ForeColor = SystemColors.Window;
@@ -194,59 +154,6 @@
             deponim.UseVisualStyleBackColor = false;
             deponim.Click += deponim_Click;
             // 
-            // kerko
-            // 
-            kerko.BackColor = Color.FromArgb(222, 8, 20);
-            kerko.FlatAppearance.BorderColor = Color.Black;
-            kerko.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            kerko.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
-            kerko.FlatStyle = FlatStyle.Flat;
-            kerko.Font = new Font("Microsoft Sans Serif", 14F);
-            kerko.Location = new Point(39, 285);
-            kerko.Margin = new Padding(4);
-            kerko.Name = "kerko";
-            kerko.Size = new Size(290, 56);
-            kerko.TabIndex = 14;
-            kerko.Text = "Kërko Para";
-            kerko.UseVisualStyleBackColor = false;
-            kerko.Click += kerko_Click;
-            // 
-            // historiku
-            // 
-            historiku.BackColor = Color.FromArgb(222, 8, 20);
-            historiku.FlatAppearance.BorderColor = Color.Black;
-            historiku.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            historiku.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
-            historiku.FlatStyle = FlatStyle.Flat;
-            historiku.Font = new Font("Microsoft Sans Serif", 14F);
-            historiku.ForeColor = SystemColors.ActiveCaptionText;
-            historiku.ImageAlign = ContentAlignment.MiddleRight;
-            historiku.Location = new Point(794, 285);
-            historiku.Margin = new Padding(4);
-            historiku.Name = "historiku";
-            historiku.Size = new Size(290, 56);
-            historiku.TabIndex = 15;
-            historiku.Text = "Historiku i transfereve";
-            historiku.UseVisualStyleBackColor = false;
-            historiku.Click += historiku_Click;
-            // 
-            // mesazhet
-            // 
-            mesazhet.BackColor = Color.FromArgb(222, 8, 20);
-            mesazhet.FlatAppearance.BorderColor = Color.Black;
-            mesazhet.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            mesazhet.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
-            mesazhet.FlatStyle = FlatStyle.Flat;
-            mesazhet.Font = new Font("Microsoft Sans Serif", 14F);
-            mesazhet.Location = new Point(39, 423);
-            mesazhet.Margin = new Padding(4);
-            mesazhet.Name = "mesazhet";
-            mesazhet.Size = new Size(290, 56);
-            mesazhet.TabIndex = 16;
-            mesazhet.Text = "Mesazhet";
-            mesazhet.UseVisualStyleBackColor = false;
-            mesazhet.Click += mesazhet_Click;
-            // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.None;
@@ -254,18 +161,13 @@
             panel1.BackgroundImageLayout = ImageLayout.Center;
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(bilanci);
-            panel1.Controls.Add(button5);
             panel1.Controls.Add(kerko);
-            panel1.Controls.Add(button4);
             panel1.Controls.Add(mesazhet);
             panel1.Controls.Add(terheqja);
-            panel1.Controls.Add(button3);
             panel1.Controls.Add(historiku);
-            panel1.Controls.Add(button2);
             panel1.Controls.Add(qkyqu);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(dergo);
             panel1.Controls.Add(deponim);
-            panel1.Controls.Add(transfer);
             panel1.ForeColor = SystemColors.Window;
             panel1.Location = new Point(-6, 0);
             panel1.Name = "panel1";
@@ -286,96 +188,96 @@
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
             // 
-            // button5
+            // kerko
             // 
-            button5.BackColor = Color.FromArgb(222, 8, 20);
-            button5.FlatAppearance.BorderColor = Color.Black;
-            button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("SF Pro Display", 12F);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(39, 285);
-            button5.Margin = new Padding(4);
-            button5.Name = "button5";
-            button5.Size = new Size(290, 56);
-            button5.TabIndex = 14;
-            button5.Text = "Kërko Para";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += kerko_Click;
+            kerko.BackColor = Color.FromArgb(222, 8, 20);
+            kerko.FlatAppearance.BorderColor = Color.Black;
+            kerko.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            kerko.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            kerko.FlatStyle = FlatStyle.Flat;
+            kerko.Font = new Font("SF Pro Display", 12F);
+            kerko.ForeColor = Color.White;
+            kerko.Location = new Point(39, 285);
+            kerko.Margin = new Padding(4);
+            kerko.Name = "kerko";
+            kerko.Size = new Size(290, 56);
+            kerko.TabIndex = 14;
+            kerko.Text = "Kërko Para";
+            kerko.UseVisualStyleBackColor = false;
+            kerko.Click += this.kerko_Click;
             // 
-            // button4
+            // mesazhet
             // 
-            button4.BackColor = Color.FromArgb(222, 8, 20);
-            button4.FlatAppearance.BorderColor = Color.Black;
-            button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("SF Pro Display", 12F);
-            button4.ForeColor = SystemColors.Window;
-            button4.Location = new Point(39, 423);
-            button4.Margin = new Padding(4);
-            button4.Name = "button4";
-            button4.Size = new Size(290, 56);
-            button4.TabIndex = 16;
-            button4.Text = "Mesazhet";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += mesazhet_Click;
+            mesazhet.BackColor = Color.FromArgb(222, 8, 20);
+            mesazhet.FlatAppearance.BorderColor = Color.Black;
+            mesazhet.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            mesazhet.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            mesazhet.FlatStyle = FlatStyle.Flat;
+            mesazhet.Font = new Font("SF Pro Display", 12F);
+            mesazhet.ForeColor = SystemColors.Window;
+            mesazhet.Location = new Point(39, 423);
+            mesazhet.Margin = new Padding(4);
+            mesazhet.Name = "mesazhet";
+            mesazhet.Size = new Size(290, 56);
+            mesazhet.TabIndex = 16;
+            mesazhet.Text = "Mesazhet";
+            mesazhet.UseVisualStyleBackColor = false;
+            mesazhet.Click += this.mesazhet_Click;
             // 
-            // button3
+            // historiku
             // 
-            button3.BackColor = Color.FromArgb(222, 8, 20);
-            button3.FlatAppearance.BorderColor = Color.Black;
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("SF Pro Display", 12F);
-            button3.ForeColor = SystemColors.Window;
-            button3.ImageAlign = ContentAlignment.MiddleRight;
-            button3.Location = new Point(794, 285);
-            button3.Margin = new Padding(4);
-            button3.Name = "button3";
-            button3.Size = new Size(290, 56);
-            button3.TabIndex = 15;
-            button3.Text = "Historiku i transfereve";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += historiku_Click;
+            historiku.BackColor = Color.FromArgb(222, 8, 20);
+            historiku.FlatAppearance.BorderColor = Color.Black;
+            historiku.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            historiku.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            historiku.FlatStyle = FlatStyle.Flat;
+            historiku.Font = new Font("SF Pro Display", 12F);
+            historiku.ForeColor = SystemColors.Window;
+            historiku.ImageAlign = ContentAlignment.MiddleRight;
+            historiku.Location = new Point(794, 285);
+            historiku.Margin = new Padding(4);
+            historiku.Name = "historiku";
+            historiku.Size = new Size(290, 56);
+            historiku.TabIndex = 15;
+            historiku.Text = "Historiku i transfereve";
+            historiku.UseVisualStyleBackColor = false;
+            historiku.Click += this.historiku_Click;
             // 
-            // button2
+            // qkyqu
             // 
-            button2.BackColor = Color.FromArgb(222, 8, 20);
-            button2.FlatAppearance.BorderColor = Color.Black;
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(222, 22, 22);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("SF Pro Display", 12F);
-            button2.ForeColor = SystemColors.ButtonFace;
-            button2.Location = new Point(794, 423);
-            button2.Margin = new Padding(4, 3, 4, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(290, 56);
-            button2.TabIndex = 9;
-            button2.Text = "Çkyçu";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += qkyqu_Click;
+            qkyqu.BackColor = Color.FromArgb(217, 37, 37);
+            qkyqu.FlatAppearance.BorderColor = Color.Black;
+            qkyqu.FlatAppearance.MouseDownBackColor = Color.FromArgb(217, 37, 37);
+            qkyqu.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            qkyqu.FlatStyle = FlatStyle.Flat;
+            qkyqu.Font = new Font("SF Pro Display", 12F);
+            qkyqu.ForeColor = SystemColors.ButtonFace;
+            qkyqu.Location = new Point(794, 423);
+            qkyqu.Margin = new Padding(4, 3, 4, 3);
+            qkyqu.Name = "qkyqu";
+            qkyqu.Size = new Size(290, 56);
+            qkyqu.TabIndex = 9;
+            qkyqu.Text = "Çkyçu";
+            qkyqu.UseVisualStyleBackColor = false;
+            qkyqu.Click += this.qkyqu_Click;
             // 
-            // button1
+            // dergo
             // 
-            button1.BackColor = Color.FromArgb(222, 8, 20);
-            button1.FlatAppearance.BorderColor = Color.Black;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("SF Pro Display", 12F);
-            button1.ForeColor = SystemColors.Window;
-            button1.Location = new Point(423, 285);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(290, 56);
-            button1.TabIndex = 12;
-            button1.Text = "Dërgo Para";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += transfer_Click;
+            dergo.BackColor = Color.FromArgb(222, 8, 20);
+            dergo.FlatAppearance.BorderColor = Color.Black;
+            dergo.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            dergo.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            dergo.FlatStyle = FlatStyle.Flat;
+            dergo.Font = new Font("SF Pro Display", 12F);
+            dergo.ForeColor = SystemColors.Window;
+            dergo.Location = new Point(423, 285);
+            dergo.Margin = new Padding(4, 3, 4, 3);
+            dergo.Name = "dergo";
+            dergo.Size = new Size(290, 56);
+            dergo.TabIndex = 12;
+            dergo.Text = "Dërgo Para";
+            dergo.UseVisualStyleBackColor = false;
+            dergo.Click += transfer_Click;
             // 
             // menu
             // 
@@ -414,10 +316,6 @@
         private Button mesazhet;
         private Panel panel1;
         private PictureBox pictureBox2;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button dergo;
     }
 }

@@ -84,13 +84,14 @@
             // returnButton
             // 
             returnButton.Anchor = AnchorStyles.None;
-            returnButton.BackColor = Color.FromArgb(180, 190, 201);
-            returnButton.FlatAppearance.BorderSize = 0;
-            returnButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(180, 190, 201);
-            returnButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            returnButton.BackColor = Color.FromArgb(222, 8, 20);
+            returnButton.FlatAppearance.BorderSize = 1;
+            returnButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            returnButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            returnButton.FlatAppearance.BorderColor = Color.Black;
             returnButton.FlatStyle = FlatStyle.Flat;
             returnButton.Font = new Font("SF Pro Display", 12F);
-            returnButton.ForeColor = Color.Black;
+            returnButton.ForeColor = Color.White;
             returnButton.Location = new Point(68, 494);
             returnButton.Margin = new Padding(3, 4, 3, 4);
             returnButton.Name = "returnButton";
@@ -123,13 +124,14 @@
             // requestButton
             // 
             requestButton.Anchor = AnchorStyles.None;
-            requestButton.BackColor = Color.FromArgb(180, 190, 201);
-            requestButton.FlatAppearance.BorderSize = 0;
-            requestButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(180, 190, 201);
-            requestButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            requestButton.BackColor = Color.FromArgb(222, 8, 20);
+            requestButton.FlatAppearance.BorderSize = 1;
+            requestButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            requestButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            requestButton.FlatAppearance.BorderColor = Color.Black;
             requestButton.FlatStyle = FlatStyle.Flat;
             requestButton.Font = new Font("SF Pro Display", 12F);
-            requestButton.ForeColor = Color.Black;
+            requestButton.ForeColor = Color.White;
             requestButton.Location = new Point(265, 494);
             requestButton.Margin = new Padding(3, 4, 3, 4);
             requestButton.Name = "requestButton";

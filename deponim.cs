@@ -59,7 +59,7 @@ namespace atm
                                                "VALUES (@Iban, @Tipi, @Shuma, GETDATE(), @UserId)";
                 SqlCommand insertTransaksionCmd = new SqlCommand(insertTransaksionQuery, connection);
                 insertTransaksionCmd.Parameters.AddWithValue("@Iban", userIban);
-                insertTransaksionCmd.Parameters.AddWithValue("@Tipi", "Depozitim");
+                insertTransaksionCmd.Parameters.AddWithValue("@Tipi", "Deponim");
                 insertTransaksionCmd.Parameters.AddWithValue("@Shuma", shumaDepozituar);
                 insertTransaksionCmd.Parameters.AddWithValue("@UserId", userId);
                 insertTransaksionCmd.ExecuteNonQuery();

@@ -118,7 +118,7 @@ namespace atm
                                                    "VALUES (@DerguesiIban, @Tipi, @Shuma, @MarresiIBAN, @Mesazhi, GETDATE(), @DerguesId)";
                             SqlCommand insertoTransaksionDerguesitCmd = new SqlCommand(insertoTransaksionDerguesitQuery, connection, transaksioni);
                             insertoTransaksionDerguesitCmd.Parameters.AddWithValue("@DerguesiIban", derguesiIban);
-                            insertoTransaksionDerguesitCmd.Parameters.AddWithValue("@Tipi", "Transferim");
+                            insertoTransaksionDerguesitCmd.Parameters.AddWithValue("@Tipi", "Transfer");
                             insertoTransaksionDerguesitCmd.Parameters.AddWithValue("@Shuma", shumaTransfer);
                             insertoTransaksionDerguesitCmd.Parameters.AddWithValue("@MarresiIBAN", marresiIban);
                             insertoTransaksionDerguesitCmd.Parameters.AddWithValue("@Mesazhi", userMessage);

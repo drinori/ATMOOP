@@ -43,10 +43,12 @@
             // send
             // 
             send.Anchor = AnchorStyles.None;
-            send.BackColor = Color.FromArgb(180, 190, 201);
-            send.FlatAppearance.BorderSize = 0;
-            send.FlatAppearance.MouseDownBackColor = Color.FromArgb(180, 190, 201);
-            send.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            send.BackColor = Color.FromArgb(222, 8, 20);
+            send.FlatAppearance.BorderSize = 1;
+            send.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            send.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            send.FlatAppearance.BorderColor = Color.Black;
+            send.ForeColor = Color.White;
             send.FlatStyle = FlatStyle.Flat;
             send.Font = new Font("SF Pro Display", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             send.Location = new Point(299, 492);
@@ -61,10 +63,12 @@
             // kthehu
             // 
             kthehu.Anchor = AnchorStyles.None;
-            kthehu.BackColor = Color.FromArgb(180, 190, 201);
-            kthehu.FlatAppearance.BorderSize = 0;
-            kthehu.FlatAppearance.MouseDownBackColor = Color.FromArgb(180, 190, 201);
-            kthehu.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            kthehu.BackColor = Color.FromArgb(222, 8, 20);
+            kthehu.FlatAppearance.BorderSize = 1;
+            kthehu.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            kthehu.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            kthehu.FlatAppearance.BorderColor = Color.Black;
+            kthehu.ForeColor = Color.White;
             kthehu.FlatStyle = FlatStyle.Flat;
             kthehu.Font = new Font("SF Pro Display", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kthehu.Location = new Point(67, 492);

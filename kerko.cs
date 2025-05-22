@@ -12,11 +12,9 @@ namespace atm
         public kerko()
         {
             InitializeComponent();
-            // Set button click handlers
             requestButton.Click += RequestButton_Click;
             returnButton.Click += ReturnButton_Click;
 
-            // Add input validation
             amountTextBox.KeyPress += AmountTextBox_KeyPress;
         }
         private void AmountTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -123,11 +121,6 @@ namespace atm
             }
         }
 
-        private void recipientIbanTextBox_TextChanged(object sender, EventArgs e)
-        {
-            // Optional: Add IBAN formatting as user types
-            // Example: Auto-insert spaces every 4 characters
-        }
 
     }
 }

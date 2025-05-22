@@ -66,12 +66,14 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
-            button1.BackColor = Color.FromArgb(180, 190, 201);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(180, 190, 201);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            button1.BackColor = Color.FromArgb(222, 8, 20);
+            button1.FlatAppearance.BorderSize = 1;
+            button1.FlatAppearance.BorderColor = Color.Black;
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("SF Pro Display", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(136, 262);
             button1.Margin = new Padding(6, 5, 6, 5);
             button1.Name = "button1";

@@ -41,40 +41,36 @@
             // 
             button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(222, 8, 20);
-            button1.FlatAppearance.BorderSize = 1;
             button1.FlatAppearance.BorderColor = Color.Black;
             button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("SF Pro Display", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.HighlightText;
             button1.Location = new Point(623, 408);
-            button1.Name = "button1";
-            button1.Size = new Size(261, 77);
-            button1.Text = "Regjistrohu";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            
-
-
+            button1.ForeColor = SystemColors.Window;
+            button1.Name = "button1";
+            button1.Size = new Size(261, 77);
+            button1.TabIndex = 10;
+            button1.Text = "Regjistrohu";
             // 
             // button3
             // 
-            
             button3.Anchor = AnchorStyles.None;
             button3.BackColor = Color.FromArgb(222, 8, 20);
-            button3.FlatAppearance.BorderSize = 1;
             button3.FlatAppearance.BorderColor = Color.Black;
             button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(161, 171, 181);
+            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("SF Pro Display", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = SystemColors.ControlLightLight;
+            button3.ForeColor = SystemColors.Window;
             button3.Location = new Point(250, 408);
             button3.Name = "button3";
             button3.Size = new Size(261, 77);
             button3.Text = "Kyçu";
-            button3.UseVisualStyleBackColor = true;
+            button3.TabIndex = 10;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // pictureBox2

@@ -237,7 +237,7 @@ namespace atm
                                 UpdateRequestStatus(requestId, "APPROVED", connection, transaction);
 
                                 // 5. Create transaction record
-                                CreateTransactionRecord(currentUserIban, requesterIban, amount, "TRANSFER", connection, transaction);
+                                // CreateTransactionRecord(currentUserIban, requesterIban, amount, "TRANSFER", connection, transaction);
 
                                 transaction.Commit();
                                 MessageBox.Show("Kërkesa u aprovua me sukses!");
