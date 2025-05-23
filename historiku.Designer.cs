@@ -77,10 +77,9 @@ namespace atm
             // 
             returnButton.Anchor = AnchorStyles.None;
             returnButton.BackColor = Color.FromArgb(222, 8, 20);
-            returnButton.FlatAppearance.BorderSize = 1;
+            returnButton.FlatAppearance.BorderColor = Color.Black;
             returnButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
             returnButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
-            returnButton.FlatAppearance.BorderColor = Color.Black;
             returnButton.FlatStyle = FlatStyle.Flat;
             returnButton.Font = new System.Drawing.Font("SF Pro Display", 12F);
             returnButton.ForeColor = Color.White;

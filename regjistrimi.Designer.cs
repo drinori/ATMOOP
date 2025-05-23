@@ -54,9 +54,10 @@
             // RegjistrohuR
             // 
             RegjistrohuR.BackColor = Color.FromArgb(222, 8, 20);
-            RegjistrohuR.FlatAppearance.BorderSize = 0;
+            RegjistrohuR.FlatAppearance.BorderColor = Color.Black;
             RegjistrohuR.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
             RegjistrohuR.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            RegjistrohuR.ForeColor = Color.White;
             RegjistrohuR.FlatStyle = FlatStyle.Flat;
             RegjistrohuR.Font = new Font("SF Pro Display", 13.8F);
             RegjistrohuR.Location = new Point(634, 376);
@@ -105,15 +106,17 @@
             // 
             // linkLabel1
             // 
+            linkLabel1.Anchor = AnchorStyles.None;
             linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("SF Pro Display", 13F);
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.Font = new Font("SF Pro Display", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.LinkColor = Color.FromArgb(0, 0, 0);
+            linkLabel1.TabIndex = 3;
+            linkLabel1.TabStop = true;
             linkLabel1.ForeColor = SystemColors.WindowText;
-            linkLabel1.LinkColor = Color.Black;
             linkLabel1.Location = new Point(634, 445);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(175, 26);
-            linkLabel1.TabIndex = 15;
-            linkLabel1.TabStop = true;
             linkLabel1.Text = "Keni llogari? Kyçu";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 

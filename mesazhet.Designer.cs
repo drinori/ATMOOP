@@ -119,12 +119,12 @@
             // 
             btnReturn.Anchor = AnchorStyles.None;
             btnReturn.BackColor = Color.FromArgb(222, 8, 20);
-            btnReturn.FlatAppearance.BorderSize = 0;
             btnReturn.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
             btnReturn.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            btnReturn.FlatAppearance.BorderColor = Color.Black;
             btnReturn.FlatStyle = FlatStyle.Flat;
             btnReturn.Font = new Font("SF Pro Display", 12F);
-            btnReturn.ForeColor = Color.Black;
+            btnReturn.ForeColor = Color.White;
             btnReturn.Location = new Point(18, 526);
             btnReturn.Name = "btnReturn";
             btnReturn.Size = new Size(164, 40);
@@ -136,12 +136,12 @@
             // 
             btnRefresh.Anchor = AnchorStyles.None;
             btnRefresh.BackColor = Color.FromArgb(222, 8, 20);
-            btnRefresh.FlatAppearance.BorderSize = 0;
+            btnRefresh.FlatAppearance.BorderColor = Color.Black;
             btnRefresh.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
             btnRefresh.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             btnRefresh.FlatStyle = FlatStyle.Flat;
             btnRefresh.Font = new Font("SF Pro Display", 12F);
-            btnRefresh.ForeColor = Color.Black;
+            btnRefresh.ForeColor = Color.White;
             btnRefresh.Location = new Point(930, 526);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(164, 40);

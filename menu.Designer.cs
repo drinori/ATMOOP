@@ -51,7 +51,7 @@
             // labelWelcome
             // 
             labelWelcome.AutoSize = true;
-            labelWelcome.BackColor = Color.Transparent;
+            labelWelcome.BackColor = Color.FromArgb(249, 249, 249);
             labelWelcome.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelWelcome.ForeColor = Color.FromArgb(41, 39, 46);
             labelWelcome.Location = new Point(33, 29);

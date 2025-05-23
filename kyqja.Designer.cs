@@ -46,8 +46,10 @@ namespace atm
             // 
             Kyqu.Anchor = AnchorStyles.None;
             Kyqu.BackColor = Color.FromArgb(222, 8, 20);
+            Kyqu.FlatAppearance.BorderColor = Color.Black;
             Kyqu.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
             Kyqu.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
+            Kyqu.ForeColor = Color.White;  
             Kyqu.FlatStyle = FlatStyle.Flat;
             Kyqu.Font = new Font("SF Pro Display", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Kyqu.Location = new Point(754, 362);

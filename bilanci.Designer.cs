@@ -43,7 +43,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("SF Pro Display", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(136, 135);
+            label1.Location = new Point(136, 123);
             label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
             label1.Size = new Size(101, 28);
@@ -56,7 +56,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("SF Pro Display", 14F);
-            label2.Location = new Point(136, 206);
+            label2.Location = new Point(136, 192);
             label2.Margin = new Padding(6, 0, 6, 0);
             label2.Name = "label2";
             label2.Size = new Size(86, 29);
@@ -67,17 +67,16 @@
             // 
             button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(222, 8, 20);
-            button1.FlatAppearance.BorderSize = 1;
             button1.FlatAppearance.BorderColor = Color.Black;
             button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(222, 8, 20);
             button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 31, 40);
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("SF Pro Display", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(136, 262);
+            button1.Location = new Point(136, 274);
             button1.Margin = new Padding(6, 5, 6, 5);
             button1.Name = "button1";
-            button1.Size = new Size(177, 69);
+            button1.Size = new Size(177, 57);
             button1.TabIndex = 2;
             button1.Text = "Kthehu";
             button1.UseVisualStyleBackColor = true;

@@ -26,7 +26,7 @@ namespace atm
                 DataGridViewColumn shumaColumn = transactionsDataGridView.Columns["Shuma"];
                 shumaColumn.DefaultCellStyle = new DataGridViewCellStyle()
                 {
-                    Alignment = DataGridViewContentAlignment.MiddleCenter,
+                    Alignment = DataGridViewContentAlignment.MiddleLeft, // Changed to MiddleLeft
                     Format = "N2"  // Formats as number with 2 decimal places
                 };
             }
@@ -43,12 +43,12 @@ namespace atm
                     string query = @"SELECT 
                                     FORMAT(Tdata, 'dd/MM/yyyy HH:mm') AS 'Data',
                                     tipi AS 'Tipi',
-                                    shuma AS 'Shuma',
+                                    CAST(shuma AS decimal(18, 2)) AS 'Shuma',
                                     CASE 
                                         WHEN tipi = 'Depozit' THEN 'Depozit'
                                         WHEN tipi = 'Terheqje' THEN 'Terheqje'
-                                        WHEN tipi = 'Transferim' AND iban = @UserIban THEN 'Dërguar tek: ' + iban_marresit
-                                        WHEN tipi = 'Transferim' AND iban_marresit = @UserIban THEN 'Marrë nga: ' + iban
+                                        WHEN tipi = 'Transfer' AND iban = @UserIban THEN 'Dërguar tek: ' + iban_marresit
+                                        WHEN tipi = 'Transfer' AND iban_marresit = @UserIban THEN 'Marrë nga: ' + iban
                                         ELSE 'Transaksion'
                                     END AS 'Detaje',
                                     ISNULL(mesazhi, '') AS 'Mesazhi'
@@ -82,16 +82,18 @@ namespace atm
             {
                 // Format amount column
                 transactionsDataGridView.Columns["Shuma"].DefaultCellStyle.Format = "N2";
-                transactionsDataGridView.Columns["Shuma"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                transactionsDataGridView.Columns["Shuma"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
                 // Color amounts based on transaction type
                 foreach (DataGridViewRow row in transactionsDataGridView.Rows)
                 {
-                    if (row.Cells["Tipi"].Value != null)
+                    if (row.Cells["Tipi"].Value != null && row.Cells["Detaje"].Value != null)
                     {
                         string transactionType = row.Cells["Tipi"].Value.ToString();
+                        string details = row.Cells["Detaje"].Value.ToString();
+
                         if (transactionType == "Depozit" ||
-                            (transactionType == "Transferim" && row.Cells["Detaje"].Value.ToString().Contains("Marrë")))
+                            (transactionType == "Transfer" && details.Contains("Marrë")))
                         {
                             row.Cells["Shuma"].Style.ForeColor = Color.Green;
                         }
@@ -105,8 +107,13 @@ namespace atm
 
             // Auto-size columns to fit content
             transactionsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            transactionsDataGridView.Columns["Data"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            transactionsDataGridView.Columns["Tipi"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+
+            // Set specific sizing for certain columns
+            if (transactionsDataGridView.Columns.Contains("Data"))
+                transactionsDataGridView.Columns["Data"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+
+            if (transactionsDataGridView.Columns.Contains("Tipi"))
+                transactionsDataGridView.Columns["Tipi"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
 
             // Add some padding
             foreach (DataGridViewColumn column in transactionsDataGridView.Columns)
@@ -118,7 +125,6 @@ namespace atm
         private void returnButton_Click_1(object sender, EventArgs e)
         {
             this.Close();
-
         }
     }
 }
